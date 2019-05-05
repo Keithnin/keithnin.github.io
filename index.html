@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/olical-color/src/color.js"></script>
+    <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+--></script>
+    <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384- GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="selectmode.css" media="screen" />
+    <!-- <link rel="prefetch" type="text/plain" href="data.txt" media="screen" /> -->
+    <script type="application/javascript" src="selectmode.js"></script>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row justify-content-center">
+            <label class="btn btn-success buttonpadding">
+                ⤒ Upload Text File <input type="file" id="input-file" hidden>
+            </label>
+            <label class="btn btn-success buttonpadding">
+                <!--  Upload SVG <input type="file" id="img-file" hidden> -->
+                ⤒ Upload SVG <input type="file" id="img-file" hidden>
+            </label>
+          </div>
+
+          <div class="row justify-content-center">
+            <div id="row1"></div>
+              <div class="col-md-1 col-2 selectionBox">
+                  <input type="checkbox" name="check" value="1"></input>
+              </div>
+              <div class="col-md-1 col-2 selectionBox">
+                  <input type="checkbox" name="check" value="2"></input>
+              </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div id="row2"></div>
+              <div class="col-md-1 col-2 selectionBox">
+                  <input type="checkbox" name="check" value="3"></input>
+              </div>
+              <div class="col-md-1 col-2 selectionBox">
+                  <input type="checkbox" name="check" value="4"></input>
+              </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="dropdown" id="selectColor">
+              <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select Color
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" id="color1" type="button"></button>
+                <button class="dropdown-item" id="color2" type="button"></button>
+                <button class="dropdown-item" id="color3" type="button"></button>
+                <button class="dropdown-item" id="color4" type="button"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+              <button class="btn btn-success buttonpadding" id="play-button">▶ Play </button>
+              <button class="btn btn-warning buttonpadding" id="reload-button">⟳ Reload </button>
+              <!-- <button class="btn btn-success buttonpadding" id="pause-button">Pause</button> --->
+          </div>
+
+          <div class="row justify-content-center">
+              <button class="btn btn-secondary buttonpadding2" id="download-button">⤓ Download Selection </button>
+              <!-- <button class="btn btn-success buttonpadding" id="pause-button">Pause</button> --->
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-12">
+              <div class="wrapper">
+                <div id="progressBar"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-12">
+              <!--  <img class="img-fluid" src="multicurve.svg" alt="Test multi-curve graph"> -->
+              <img class="img-fluid" id="svg-img" src="#" alt="Uploaded SVG will appear here...">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>
